@@ -17,3 +17,43 @@ body{
     padding: 1rem;
     font-size: 150%;
 }
+/*Styling wrapper clas ends here*/
+.sidebar{
+grid-area: sidebar;
+}
+.header{
+    grid-area: header;
+}
+.sidebar2{
+    grid-area: sidebar2;
+}
+.content{
+    grid-area: content;
+}
+.footer{
+    grid-area: footer;
+}
+
+/* Styling header and footer here*/
+.header, .footer{
+    background-color: rgb(17, 9, 123);
+}
+.sidebar2{
+    background-color: lightpink;
+}
+
+/* MediaQuery below------*/
+/*  start   */
+@media only screen and (min-width:500px){
+/* Her inne is rule for screen min-width: 500px */
+.wrapper{
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" 
+    "sidebar content"
+    "sidebar2 sidebar2"
+    "footer";
+}
+
+}
+
+/*  End   */
