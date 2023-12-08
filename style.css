@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.wrapper{
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:"header" "sidebar" "sidebar2" 
+    "content" "footer";
+
+}
+.box{
+    background-color: goldenrod;
+    border-radius: 7px;
+    padding: 1rem;
+    font-size: 150%;
+}
